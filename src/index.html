@@ -3,27 +3,19 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
-		<title>Minimalist Online Markdown Editor</title>
-		<meta name="description" content="This is the simplest and slickest online Markdown editor. Just write Markdown and see what it looks like as you type. And convert it to HTML in one click."/>
+		<title>Minimalist Markdown Editor</title>
+		<meta name="description" content="This is the simplest and slickest Markdown editor. Just write Markdown and see what it looks like as you type. And convert it to HTML in one click."/>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-		<meta property="og:image" content="http://markdown.pioul.fr/images/markdown.png"/>
+		<meta property="og:image" content="images/markdown.png"/>
 
-		<!-- build:cssDefaultTheme --><!-- endbuild -->
-		<link id="theme" href="" rel="stylesheet" type="text/css"/>
+		<link id="theme-default"   href="bundle/light-theme.css"      rel="stylesheet" type="text/css"/>
+		<link id="theme-light-ref" data-href="bundle/light-theme.css" rel="stylesheet" type="text/css"/>
+		<link id="theme-dark-ref"  data-href="bundle/dark-theme.css"  rel="stylesheet" type="text/css"/>
 
-		<!-- build:cssLightThemeRef --><!-- endbuild -->
-		<!-- build:cssDarkThemeRef --><!-- endbuild -->
+		<script src="js/jquery-1.10.2.min.js"></script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="bundle/all.js"></script>
 
-		<!-- build:js -->
-		<script src="app-shared/js/libs/markdown-it.min.js"></script>
-		<script src="app-shared/js/markdown-it-plugins/markdown-it-map-lines.js"></script>
-		<script src="app-shared/js/utilities.js"></script>
-		<script src="app-shared/js/preview.js"></script>
-		<script src="app-shared/js/main.js"></script>
-		<script src="js/main.js"></script>
-		<!-- endbuild -->
 	</head>
 	<body class="clearfix">
 		<div id="left-column">
@@ -98,8 +90,8 @@ Second line.</code></pre>
 					<h2>About MME</h2>
 
 					<p>Hi, I'm <a href="http://pioul.fr/a-propos/" target="_blank">Philippe Masset</a>.</p>
-					<p>I made the Minimalist Online Markdown Editor because I love Markdown and simple things.<br/>
-						The whole source code is on <a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" target="_blank">GitHub</a>, and this editor is also available offline and with file support as a <a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" target="_blank">Chrome app</a>.</p>
+					<p>I made the Minimalist Markdown Editor because I love Markdown and simple things.<br/>
+						The whole source code is on <a href="https://github.com/pioul/Minimalist-Online-Markdown-Editor" target="_blank">GitHub</a>, and this editor is also available as a <a href="https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf" target="_blank">Chrome app</a>.</p>
 					<p>If you have any suggestions or remarks whatsoever, just click on my name above and you'll have plenty of ways of contacting me.</p>
 
 					<h3>Privacy</h3>
@@ -155,9 +147,9 @@ Second line.</code></pre>
 						<a href="#" class="button icon-fullscreen feature" data-feature="fullscreen" data-tofocus="markdown" title="Go fullscreen"></a>
 					</div>
 				</div>
-				<textarea id="markdown" class="full-height" placeholder="Write Markdown"># Minimalist Online Markdown Editor
+				<textarea id="markdown" class="full-height" placeholder="Write Markdown"># Minimalist Markdown Editor
 
-This is the **simplest** and **slickest** online Markdown editor.  
+This is the **simplest** and **slickest** Markdown editor.
 Just write Markdown and see what it looks like as you type. And convert it to HTML in one click.
 
 ## Getting started
@@ -174,7 +166,7 @@ Just start typing in the left panel.
 ### Privacy
 
 - No data is sent to any server – everything you type stays inside your browser
-- The editor automatically saves what you write locally for future use.  
+- The editor automatically saves what you write locally for future use.
   If using a public computer, either empty the left panel before leaving the editor or use your browser's privacy mode</textarea>
 			</div>
 		</div>
@@ -210,15 +202,5 @@ Just start typing in the left panel.
 		<div class="bottom-bar visible-when-fullscreen clearfix">
 			<div class="word-count"></div>
 		</div>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-8885785-17']);
-		  _gaq.push(['_trackPageview']);
-		  (function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
 	</body>
 </html>

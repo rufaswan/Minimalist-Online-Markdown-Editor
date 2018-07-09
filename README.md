@@ -1,11 +1,11 @@
-# Minimalist Online Markdown Editor
+# Minimalist Markdown Editor
 
-This is the source for the **simplest** and **slickest** online Markdown editor, available online here: <http://markdown.pioul.fr>  
+This is the source for the **simplest** and **slickest** Markdown editor, available here: <http://markdown.pioul.fr>
 Just write Markdown and see what it looks like as you type. And convert it to HTML in one click.
 
 ## The Minimalist Markdown Editor project
 
-The Minimalist Markdown Editor project is available both online as a web app, and offline and with file support as a Chrome app:
+The Minimalist Markdown Editor project is available both as a web app, and as a Chrome app:
 
 - [Web app](http://markdown.pioul.fr) (the source code is in this repo)
 - [Chrome app](https://chrome.google.com/webstore/detail/minimalist-markdown-edito/pghodfjepegmciihfhdipmimghiakcjf) ([GitHub repository](https://github.com/pioul/Minimalist-Markdown-Editor-for-Chrome))

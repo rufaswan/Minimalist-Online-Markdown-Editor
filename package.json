@@ -1,5 +1,5 @@
 {
-  "name": "minimalist-online-markdown-editor",
+  "name": "minimalist-markdown-editor",
   "scripts": {
     "build": "gulp"
   },
