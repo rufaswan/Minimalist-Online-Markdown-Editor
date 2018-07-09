@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git="git://github.com:rufaswan/Minimalist-Online-Markdown-Editor.git"
+git="git@github.com:rufaswan/Minimalist-Online-Markdown-Editor.git"
 
 msg="
 please type a comment to push
