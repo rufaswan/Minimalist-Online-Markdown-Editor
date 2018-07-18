@@ -3,9 +3,10 @@
 git="git@github.com:rufaswan/Minimalist-Online-Markdown-Editor.git"
 
 msg="
-please type a comment to push
-  type pull  to do a git pull
-  type force to overwrite the repo
+please type a comment to commit and push
+  type -pull  to do a git pull
+  type -force to overwrite the repo
+  type -retry to retry git push [no commit]
 "
 [ $# = 0 ] && { echo "$msg"; exit; }
 
@@ -21,6 +22,10 @@ case "$1" in
 		[[ "$2" == "i_really_want_to_do_this" ]] || exit
 		echo "git push --force $git : master"
 		git push --force origin master
+		;;
+	"-retry")
+		echo "git push $git : $@"
+		git push origin master
 		;;
 	*)
 		echo "git push $git : $@"
