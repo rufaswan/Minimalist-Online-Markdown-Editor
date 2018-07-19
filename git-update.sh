@@ -27,6 +27,19 @@ case "$1" in
 		echo "git push $git : $@"
 		git push origin master
 		;;
+	"-update")
+		if [ "$ups" ]; then
+			echo "git fetch $ups"
+			git fetch upstream
+			git checkout master
+			git merge upstream/master
+		else
+			echo "No upstream defined. Nothing to fetch."
+		fi
+		;;
+	"-last")
+		git log --pretty=oneline -5
+		;;
 	*)
 		echo "git push $git : $@"
 		git add .
